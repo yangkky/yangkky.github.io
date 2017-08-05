@@ -30,5 +30,5 @@ I received the 2017 Chemistry and Chemical Engineering Teaching Assistantship Aw
 
 I've TA'd or will TA the following courses at Caltech:
 * Chemical Engineering Kinetics (Winter 2016)
-* Introduction to Bioengineering (Fall 2017)
-* Introduction to Bioengineering (Fall 2018)
+* Introduction to Biomolecular Engineering (Fall 2017)
+* Introduction to Biomolecular Engineering (Fall 2018)
