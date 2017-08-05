@@ -19,6 +19,7 @@ Machine learning is the science of getting computers to learn from data instead 
 My research uses machine learning to attack challenges in protein engineering that are otherwise intractable because they are both too complex to be designed from first principles and not amenable to the high-throughput screens used in directed evolution. I am currently collaborating with scientists both in the Arnold lab and in other groups to design enzymes and light-sensitive proteins with unique properties. As science becomes more complex and data-driven, many of the interesting problems will be at the borders between disciplines, and I find that working with people with different backgrounds provides a fuller perspective on what problems are interesting and how to approach them.
 
 # Publications
+**“Machine learning to predict eukaryotic expression and plasma membrane localization of engineered integral membrane proteins.”** Bedbrook, C. N., Yang, K. K., Rice, A. J., Gradinaru, V., Arnold, F.H. (2017). In preparation. 
 
 **“Structure-Guided SCHEMA Recombination Generates Diverse Chimeric Channelrhodopsins”**  C. N. Bedbrook, A. J. Rice, K. K. Yang, X. Ding, S. Chen, E. M. LeProust, V. Gradinaru, F. H. Arnold. *Proceedings of the National Academy of Sciences* 114, E2624-E2633 (2017). [doi/10.1073/pnas.170026911](http://www.pnas.org/content/early/2017/03/09/1700269114.abstract)
 
