@@ -26,8 +26,9 @@ My research uses machine learning to attack challenges in protein engineering th
 **"Machine Learning to Predict Eukaryotic Expression and Plasma Membrane Localization of an Integral Membrane Protein."** Proteins Gordon Research Seminar. 18 June 2017.
 
 # Teaching
-Recipient of 2017 Chemistry and Chemical Engineering Teaching Assistantship Award for exceptional teaching assistants.
-I've TA'd or will TA the following courses at Caltech: 
+I received the 2017 Chemistry and Chemical Engineering Teaching Assistantship Award for exceptional teaching assistants.
+
+I've TA'd or will TA the following courses at Caltech:
 * Chemical Engineering Kinetics (Winter 2016)
 * Introduction to Bioengineering (Fall 2017)
 * Introduction to Bioengineering (Fall 2018)
