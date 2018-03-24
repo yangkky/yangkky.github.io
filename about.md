@@ -19,9 +19,11 @@ Machine learning is the science of getting computers to learn from data instead 
 My research uses machine learning to attack challenges in protein engineering that are otherwise intractable because they are both too complex to be designed from first principles and not amenable to the high-throughput screens used in directed evolution. I am currently collaborating with scientists both in the Arnold lab and in other groups to design enzymes and light-sensitive proteins with unique properties. As science becomes more complex and data-driven, many of the interesting problems will be at the borders between disciplines, and I find that working with people with different backgrounds provides a fuller perspective on what problems are interesting and how to approach them.
 
 # Publications
+**"Protein embeddings for machine learning."** Yang KK, Wu Z, Bedbrook CN, Arnold FH. *Bioinformatics*. 23 March 2018.  [https://doi.org/10.1093/bioinformatics/bty178](https://doi.org/10.1093/bioinformatics/bty178)
+
 **“Machine learning to predict eukaryotic expression and plasma membrane localization of engineered integral membrane proteins.”** Bedbrook CN, Yang KK, Rice AJ, Gradinaru V, Arnold FH. *PLOS Computational Biology* 13(10): e1005786 (2017). [doi.org/10.1371/journal.pcbi.1005786](https://doi.org/10.1371/journal.pcbi.1005786).
 
-**“Structure-Guided SCHEMA Recombination Generates Diverse Chimeric Channelrhodopsins”**  C. N. Bedbrook, A. J. Rice, K. K. Yang, X. Ding, S. Chen, E. M. LeProust, V. Gradinaru, F. H. Arnold. *Proceedings of the National Academy of Sciences* 114, E2624-E2633 (2017). [doi/10.1073/pnas.170026911](https://doi/10.1073/pnas.170026911)
+**“Structure-Guided SCHEMA Recombination Generates Diverse Chimeric Channelrhodopsins.”**  C. N. Bedbrook, A. J. Rice, K. K. Yang, X. Ding, S. Chen, E. M. LeProust, V. Gradinaru, F. H. Arnold. *Proceedings of the National Academy of Sciences* 114, E2624-E2633 (2017). [doi/10.1073/pnas.170026911](https://doi/10.1073/pnas.170026911)
 
 # Presentations
 **"Machine Learning to Predict Eukaryotic Expression and Plasma Membrane Localization of an Integral Membrane Protein."** Proteins Gordon Research Seminar. 18 June 2017.
