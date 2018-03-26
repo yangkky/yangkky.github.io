@@ -21,9 +21,9 @@ For example, if I want to learn whether movie reviews are positive or negative, 
 
 Inspired by doc2vec, I created a two-part pipeline for embedding sequences of interest. First, unsupervised doc2vec embedding models were trained on proteins downloaded from UniProt. Instead of 'words,' we have 'k-mers', which I obtain by chopping each protein up into subsequences of length *k*. For example, for k = 3, there are three lists and each list begins at one of the first three amino acid positions of the sequence. Doc2vec learns an embedding for each overall sequence and for each k-mer. I chose to use 64-dimensional embeddings.
 
-Once I have this unsupervised embedding model, I can use it to encode sequences of interest by first chopping them into k-mers of the same size. These encodings then serve as inputs in [Gaussian process (pdf)](www.gaussianprocess.org/gpml/chapters/RW.pdf) regression models.
+Once I have this unsupervised embedding model, I can use it to encode sequences of interest by first chopping them into k-mers of the same size. These encodings then serve as inputs in [Gaussian process (pdf)](http://www.gaussianprocess.org/gpml/chapters/RW.pdf) regression models.
 
-![Scheme]({{ "/assets/figure1.png" | absolute_url }})
+![Scheme]({{ site.url }}/assets/figure1.png)
 
 
 ## Encodings enable accurate models
