@@ -23,7 +23,7 @@ Inspired by doc2vec, I created a two-part pipeline for embedding sequences of in
 
 Once I have this unsupervised embedding model, I can use it to encode sequences of interest by first chopping them into k-mers of the same size. These encodings then serve as inputs in [Gaussian process (pdf)](http://www.gaussianprocess.org/gpml/chapters/RW.pdf) regression models.
 
-![Scheme]({{ site.url }}/assets/figure1.png)
+![Scheme]({{ site.baseurl }}/assets/figure1.png)
 
 
 ## Encodings enable accurate models
