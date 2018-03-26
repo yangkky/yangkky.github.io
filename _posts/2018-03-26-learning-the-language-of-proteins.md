@@ -9,7 +9,7 @@ Amino acids in a protein are analogous to letters in an alphabet, short subseque
 
 ## Learn to encode proteins
 
-I spent the first part of my PhD using machine learning to [predict protein properties] (http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005786) from small sets of measured sequences. The first step of a machine-learning pipeline for proteins is *encoding* the proteins. We used what's known as a one-hot encoding. For example, if I want to encode the DNA sequence AGTT, then I can encode each position using three 0s and one 1. Of course, for proteins, I would need 19 zeros and one 1 for each position.
+I spent the first part of my PhD using machine learning to [predict protein properties](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005786) from small sets of measured sequences. The first step of a machine-learning pipeline for proteins is *encoding* the proteins. We used what's known as a one-hot encoding. For example, if I want to encode the DNA sequence AGTT, then I can encode each position using three 0s and one 1. Of course, for proteins, I would need 19 zeros and one 1 for each position.
 
 ![One-hot encoding]({{ site.baseurl }}/assets/onehot.jpg)
 
