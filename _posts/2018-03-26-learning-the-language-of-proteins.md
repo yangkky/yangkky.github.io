@@ -29,7 +29,7 @@ Once I have this unsupervised embedding model, I can use it to encode sequences 
 
 I tested embeddings on four protein prediction tasks, comparing their performance to one-hot encodings of sequence or sequence and structure, encodings based on physical properties ([AAIndex](https://www.ncbi.nlm.nih.gov/pubmed/9847231) and [ProFET](https://academic.oup.com/bioinformatics/article/31/21/3429/194375)), and [string mismatch kernels](https://academic.oup.com/bioinformatics/article/20/4/467/192308). For all of these tasks, the embeddings performed at least as well as the other methods despite not using alignments, structural information, or physical properties. For example, here are the test predictions for channelrhodopsin localization, where embeddings have both the highest Kendall Tau and lowest mean absolute deviation.
 
-![Predictions]({{ site.baseurl }}/assets/predictions.jpg)
+![Predictions]({{ site.baseurl }}/assets/localization_predictions.jpg)
 
 I chose to use 64-dimensional embeddings, but it turns out that I can still train reasonably accurate models after reducing the number of embedding dimensions to 16.
 
