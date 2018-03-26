@@ -12,6 +12,7 @@ Amino acids in a protein are analogous to letters in an alphabet, short subseque
 I spent the first part of my PhD using machine-learning to [predict protein properties] (http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005786) from small sets of measured sequences. The first step of a machine-learning pipeline for proteins is *encoding* the proteins. We used what's known as a one-hot encoding. For example, if I want to encode the DNA sequence AGTT, then I can encode each position using three 0s and one 1. Of course, for proteins, I would need 19 zeros and one 1 for each position.
 
 ![One-hot encoding]({{ "/assets/onehot.jpg" | absolute_url }})
+![One-hot encoding]({{ "assets/onehot.jpg" | absolute_url }})
 
 One-hot encodings are a good default. They do, however, have some drawbacks. One-hot encodings are also space-inefficient and don't account for the amino acid properties. There are lists and tables of amino acid properties out there, but then you have to decide which ones to use. They're also surprisingly difficult to implement correctly. This quarter, I TAd a class where we had the students reproduce many of my results. Helping them with their homework, I noticed that the single most difficult part was making the one-hot encodings of the sequences. This gets even worse when you don't have a TA who picks out all the sequences for you and pre-aligns them!  So if we're learning to predict protein properties from data, why not learn to encode the proteins too?
 
