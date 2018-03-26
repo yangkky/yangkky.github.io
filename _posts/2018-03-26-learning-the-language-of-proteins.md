@@ -11,8 +11,7 @@ Amino acids in a protein are analogous to letters in an alphabet, short subseque
 
 I spent the first part of my PhD using machine-learning to [predict protein properties] (http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005786) from small sets of measured sequences. The first step of a machine-learning pipeline for proteins is *encoding* the proteins. We used what's known as a one-hot encoding. For example, if I want to encode the DNA sequence AGTT, then I can encode each position using three 0s and one 1. Of course, for proteins, I would need 19 zeros and one 1 for each position.
 
-![One-hot encoding]({{ "/assets/onehot.jpg" | absolute_url }})
-![One-hot encoding]({{ "assets/onehot.jpg" | absolute_url }})
+![One-hot encoding]({{ site.baseurl }}/assets/onehot.jpg)
 
 One-hot encodings are a good default. They do, however, have some drawbacks. One-hot encodings are also space-inefficient and don't account for the amino acid properties. There are lists and tables of amino acid properties out there, but then you have to decide which ones to use. They're also surprisingly difficult to implement correctly. This quarter, I TAd a class where we had the students reproduce many of my results. Helping them with their homework, I noticed that the single most difficult part was making the one-hot encodings of the sequences. This gets even worse when you don't have a TA who picks out all the sequences for you and pre-aligns them!  So if we're learning to predict protein properties from data, why not learn to encode the proteins too?
 
@@ -26,16 +25,15 @@ Once I have this unsupervised embedding model, I can use it to encode sequences 
 
 ![Scheme]({{ site.baseurl }}/assets/figure1.png)
 
-
 ## Encodings enable accurate models
 
 I tested embeddings on four protein prediction tasks, comparing their performance to one-hot encodings of sequence or sequence and structure, encodings based on physical properties ([AAIndex](https://www.ncbi.nlm.nih.gov/pubmed/9847231) and [ProFET](https://academic.oup.com/bioinformatics/article/31/21/3429/194375)), and [string mismatch kernels](https://academic.oup.com/bioinformatics/article/20/4/467/192308). For all of these tasks, the embeddings performed at least as well as the other methods despite not using alignments, structural information, or physical properties. For example, here are the test predictions for channelrhodopsin localization, where embeddings have both the highest Kendall Tau and lowest mean absolute deviation.
 
-![Predictions]({{ "/assets/localization_predictions.jpg" | absolute_url }})
+![Predictions]({{ site.baseurl }}/assets/predictions.jpg)
 
 I chose to use 64-dimensional embeddings, but it turns out that I can still train reasonably accurate models after reducing the number of embedding dimensions to 16.
 
-![d curve]({{ "/assets/vary_d_curve.jpg" | absolute_url }})
+![d curve]({{ site.baseurl }}/assets/vary_d_curve.jpg)
 
 Think about this for a minute. The protein of interest has over 200 amino acids. Protein translation and trafficking is a multi-step, poorly-understood process. Previously, we had found that there are no simple sequence or structure predictors of membrane localization. But I can store enough information in 16 numbers to predict how well it will be trafficked to the cell plasma membrane.
 
