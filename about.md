@@ -11,7 +11,7 @@ Before moving to California, I completed my undergraduate degree at The Ohio Sta
 
 Outside of work, I enjoy board games, ultimate, and music. Most of all, however, I enjoy spending time with my wonderful wife.
 
-My resume can be found [here](https://github.com/yangkky/resume/blob/master/KKY_cv.pdf)
+My resume can be found [here](https://github.com/yangkky/resume/blob/master/KKY_cv.pdf).
 
 # Research Interests
 Machine learning is the science of getting computers to learn from data instead of being explicitly programmed. In the past decade, machine learning has given us machine translation, self-driving cars, and effective web search. As DNA-sequencing and synthesis technology improves, humanity is amassing a vast collection of biological sequence data. Machine learning will be a vital approach for understanding and using this data.
