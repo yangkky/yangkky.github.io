@@ -8,7 +8,7 @@ I'm a computational biologist working at the intersection of machine learning an
 
 Here's some more background [about me](/about) and details about [my research](/research). My resume can be found [here](https://github.com/yangkky/resume/blob/master/KKY_cv.pdf).
 
-# Research
+### Research
 
 Machine learning is the science of getting computers to learn from data instead of being explicitly programmed. In the past decade, machine learning has given us machine translation, self-driving cars, and effective web search. As DNA-sequencing and synthesis technology improves, humanity is amassing a vast collection of biological sequence data. Machine learning will be a vital approach for understanding and using this data.
 
