@@ -7,14 +7,8 @@ I am currently a PhD student in Chemical Engineering at Caltech. I work in Franc
 
 Before moving to California, I completed my undergraduate degree at The Ohio State University, where I studied chemical engineering with a minor in piano performance. Between Ohio State and graduate school, I taught math and physics for three years at a high school in Inglewood, California through Teach for America. In those three years, I transformed from a struggling first-year teacher into an effective instructor and robotics coach with the help of the amazing staff at Animo Inglewood Charter High School and Green Dot Public Schools. In June 2017, I had the honor of watching my last class of freshmen graduate from high school, and I'm excited to see what they do with their futures.
 
-Outside of work, I enjoy board games, ultimate, and music. Most of all, however, I enjoy spending time with my wonderful wife.
+Outside of work, I enjoy board games, ultimate, and music. Most of all, however, I enjoy spending time with my wonderful wife and son.
 
-My resume can be found [here](https://github.com/yangkky/resume/blob/master/KKY_cv.pdf).
-
-# Research Interests
-Machine learning is the science of getting computers to learn from data instead of being explicitly programmed. In the past decade, machine learning has given us machine translation, self-driving cars, and effective web search. As DNA-sequencing and synthesis technology improves, humanity is amassing a vast collection of biological sequence data. Machine learning will be a vital approach for understanding and using this data.
-
-My research uses machine learning to attack challenges in protein engineering that are otherwise intractable because they are both too complex to be designed from first principles and not amenable to the high-throughput screens used in directed evolution. I am currently collaborating with scientists both in the Arnold lab and in other groups to design enzymes and light-sensitive proteins with unique properties. As science becomes more complex and data-driven, many of the interesting problems will be at the borders between disciplines, and I find that working with people with different backgrounds provides a fuller perspective on what problems are interesting and how to approach them.
 
 # Publications
 **"Learned protein embeddings for machine learning."** Yang KK, Wu Z, Bedbrook CN, Arnold FH. *Bioinformatics*. 23 March 2018.  [doi.org/10.1093/bioinformatics/bty178](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty178/4951834?guestAccessKey=aa420938-7c4a-4c47-8763-bad82d936d10)
