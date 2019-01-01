@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Research</title>
-  <meta name="description" content="Kevin Kaichuang Yang (楊凱筌)">
+  <meta name="description" content="">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="http://localhost:4000/research/">
@@ -83,24 +83,26 @@
 
 <p>Directed evolution optimizes proteins through iterative diversification and screening without requiring knowledge of how the protein performs its function. The first step is sequence diversification from starting (parent) sequences. Second, screening and selection identifies variants with improved properties to start the next round of diversification. The process is repeated until fitness goals are reached.</p>
 
-<p><img src="/assets/directed_evolution.png" alt="Directed evolution" /></p>
+<p><img src="/assets/de_slide.png" alt="Directed evolution" /></p>
 
-<p>While effective, directed evolution has some limitations:</p>
+<p>While effective (so much so that Frances won a Nobel Prize for it!), directed evolution has some limitations:</p>
 
 <ul>
   <li>It requires a starting point with measurable function</li>
   <li>It requires a high-throughput (&gt;1000 sequence/week) screen</li>
 </ul>
 
-<p>The second limitation arises because directed evolution discards all the information in the unimproved variants! If instead, we learn from that information, then we should be able to select new mutations more efficiently than by randomly mutating the current best variant, especially if the effects of mutations are not additive. I call this machine-learning guided directed evolution.</p>
+<p>The second limitation arises because directed evolution discards all the information in the unimproved variants! If instead, we learn from that information, then we should be able to select new mutations more efficiently than by randomly mutating the current best variant, especially if the effects of mutations are not additive. I call this machine-learning guided directed evolution, and I wrote a whole <a href="https://arxiv.org/abs/1811.10775">review</a> about it.</p>
 
-<p><img src="/assets/ml_de.png" alt="Machine learning-guided directed evolution" /></p>
+<p><img src="/assets/mlde_slide.png" alt="Machine learning-guided directed evolution" /></p>
 
 <p>I’ve applied this approach to engineer channelrhodopsins (ChRs) for <a href="https://doi.org/10.1371/journal.pcbi.1005786">membrane localization</a> in mammalian cells and to produce stronger currents across the cell membrane when activated by light. ChRs are often artificially expressed in neurons so that the neurons can be activated by shining lights on them, in a process known as optogenetics. We can only screen about 2 variants a week for the properties we care about, so traditional directed evolution doesn’t work here!</p>
 
+<p>In the second half of my PhD, I focused on developing methods for the two key steps in the machine learning-guided directed evolution process: the ML sequence-function model, and ML-guided selection for using that model to choose the next set of proteins to characterize.</p>
+
 <h1 id="vector-representations-of-proteins">Vector representations of proteins</h1>
 
-<p>The first step of a machine-learning pipeline for proteins is <em>encoding</em> the proteins. We used what’s known as a one-hot encoding. For example, if I want to encode the DNA sequence AGTT, then I can encode each position using three 0s and one 1. Of course, for proteins, I would need 19 zeros and one 1 for each position.</p>
+<p>The first step of a machine-learning pipeline for proteins is <em>encoding</em> the proteins. In the channelrhodopsin work, we used what’s known as a one-hot encoding. For example, if I want to encode the DNA sequence AGTT, then I can encode each position using three 0s and one 1. Of course, for proteins, I would need 19 zeros and one 1 for each position.</p>
 
 <p><img src="/assets/onehot.jpg" alt="One-hot encoding" /></p>
 
@@ -123,14 +125,14 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Adventures in Machine Learning and Biology</h2>
+    <!-- <h2 class="footer-heading">Adventures in Machine Learning and Biology</h2> -->
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>
             
-              Adventures in Machine Learning and Biology
+              Kevin Kaichuang Yang (楊凱筌)
             
             </li>
             
@@ -160,8 +162,8 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>Kevin Kaichuang Yang (楊凱筌)
-</p>
+        <!-- <p></p> -->
+        <p><img src=assets/seal.jpg ></p>
       </div>
     </div>
 
