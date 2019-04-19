@@ -13,6 +13,8 @@ Outside of work, I enjoy board games, ultimate, and music. Most of all, however,
 
 
 # Publications
+**"Batched stochastic Bayesian optimization via combinatorial constraints design."** Yang KK, Chen Y, Lee A, Yue Y. AIStats 2019. [arxiv](http://arxiv.org/abs/1904.08102)
+
 **“Machine learning-guided channelrhodopsin engineering enables minimally-invasive optogenetics.”** Bedbrook CN, Yang KK, Robinson JE, Gradinaru V, Arnold FH. Submitted.
 
 **"Learned protein embeddings for machine learning."** Yang KK, Wu Z, Bedbrook CN, Arnold FH. *Bioinformatics*. 23 March 2018.  [doi.org/10.1093/bioinformatics/bty178](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty178/4951834?guestAccessKey=aa420938-7c4a-4c47-8763-bad82d936d10)
