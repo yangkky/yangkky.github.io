@@ -34,7 +34,7 @@ Outside of work, I enjoy board games, ultimate, and music. Most of all, however,
 # Teaching
 I received the 2017 Chemistry and Chemical Engineering Teaching Assistantship Award for exceptional teaching assistants.
 
-I've TA'd or will TA the following courses at Caltech:
+I've TA'd the following courses at Caltech:
 * Chemical Engineering Kinetics (Winter 2016)
 * Introduction to Biomolecular Engineering (Fall 2017)
 * Introduction to Biomolecular Engineering (Fall 2018)
