@@ -14,7 +14,7 @@ While effective (so much so that Frances won a Nobel Prize for it!), directed ev
 * It requires a starting point with measurable function
 * It requires a high-throughput (>1000 sequence/week) screen
 
-The second limitation arises because directed evolution discards all the information in the unimproved variants! If instead, we learn from that information, then we should be able to select new mutations more efficiently than by randomly mutating the current best variant, especially if the effects of mutations are not additive. I call this machine-learning guided directed evolution, and I wrote a whole [review](https://arxiv.org/abs/1811.10775) about it.
+The second limitation arises because directed evolution discards all the information in the unimproved variants! If instead, we learn from that information, then we should be able to select new mutations more efficiently than by randomly mutating the current best variant, especially if the effects of mutations are not additive. I call this machine-learning guided directed evolution, and I wrote a whole [review](https://arxiv.org/abs/1811.10775) about it. Because reviews get stale very quickly in developing fields, I also maintain a [repository](https://github.com/yangkky/Machine-learning-for-proteins) listing papers covering machine learning on proteins. 
 
 ![Machine learning-guided directed evolution]({{ site.baseurl }}/assets/mlde_slide.png)
 
