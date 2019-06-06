@@ -27,6 +27,8 @@ Outside of work, I enjoy board games, ultimate, and music. Most of all, however,
 **“Machine learning in protein engineering.”** Yang KK, Wu Z, Arnold FH. [[arxiv](https://arxiv.org/abs/1811.10775)].
 
 # Presentations
+**"Probabilistic protein engineering."** Janelia Research Center. 30 May 2019. 
+
 **"Learning the language of proteins."** Gray-Hill Seminar, Occidental College. 29 June 2018.
 
 **"Machine Learning to Predict Eukaryotic Expression and Plasma Membrane Localization of an Integral Membrane Protein."** Proteins Gordon Research Seminar. 18 June 2017.
