@@ -20,7 +20,7 @@ Here's what I would say to your critics:
 
 If you collect some spectral data and use linear regression to draw some conclusions from it, nobody will argue that it's not chemistry. Using a more complex model, such as a neural network, doesn't magically make your work not chemistry. You're simply using a very powerful computational tool to draw conclusions from your data. Your subject-area expertise as a chemist is what allows you to choose a reasonable model and evaluate model performance.
 
-Machine learning isn't the solution to every problem in chemistry, but it's already proven it's ability to solve chemical problems, and will continue to do so.
+Machine learning isn't the solution to every problem in chemistry, but it's already proven its ability to solve chemical problems, and will continue to do so.
 
 For example:
 ACS Central Science thinks this is chemistry: [https://pubs.acs.org/doi/full/10.1021/acscentsci.7b00572](https://pubs.acs.org/doi/full/10.1021/acscentsci.7b00572)   
