@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Responding to 'That's not biology/chemistry!"
-date: 2019-06-06 00:00:00 -0800
+date: 2019-06-11 00:00:00 -0800
 ---
 
 When Frances won the Nobel Prize in Chemistry, a Spanish chemist emailed her asking for advice on colleagues who claimed that their work wasn't chemistry at all because it used machine learning: 
