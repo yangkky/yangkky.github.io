@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-11T21:16:17-04:00</updated><id>http://localhost:4000/</id><title type="html">Adventures in Machine Learning and Biology</title><author><name>Kevin Kaichuang Yang (楊凱筌)</name></author><entry><title type="html">Responding to ‘That’s not biology/chemistry!</title><link href="http://localhost:4000/2019/06/11/responding.html" rel="alternate" type="text/html" title="Responding to 'That's not biology/chemistry!" /><published>2019-06-11T04:00:00-04:00</published><updated>2019-06-11T04:00:00-04:00</updated><id>http://localhost:4000/2019/06/11/responding</id><content type="html" xml:base="http://localhost:4000/2019/06/11/responding.html">&lt;p&gt;When Frances won the Nobel Prize in Chemistry, a Spanish chemist emailed her asking for advice on colleagues who claimed that their work wasn’t chemistry at all because it used machine learning:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-20T22:12:23-04:00</updated><id>http://localhost:4000/</id><title type="html">Adventures in Machine Learning and Biology</title><author><name>Kevin Kaichuang Yang (楊凱筌)</name></author><entry><title type="html">Getting started in machine learning</title><link href="http://localhost:4000/2019/06/21/getting-started.html" rel="alternate" type="text/html" title="Getting started in machine learning" /><published>2019-06-20T20:00:00-04:00</published><updated>2019-06-20T20:00:00-04:00</updated><id>http://localhost:4000/2019/06/21/getting-started</id><content type="html" xml:base="http://localhost:4000/2019/06/21/getting-started.html">&lt;p&gt;Every so often, a chemist or biologist will ask me how they can get started in machine learning. Here is my current answer:&lt;/p&gt;
+
+&lt;h2 id=&quot;my-experience&quot;&gt;My experience&lt;/h2&gt;
+
+&lt;p&gt;When I started out, I had a strong quantitative background (chemical engineering undergrad, was taking PhD courses in chemical engineering) and some functional skills in programming. From there, I first dove deep into one type of machine learning (Gaussian processes) along with general ML practice (how to set up ML experiments in order to evaluate your models) because that was what I needed for my project. I learned mostly online and by reading papers, but I also took one class on data analysis for biologists that wasn’t ML-focused but did cover programming and statistical thinking. Later, I took a linear algebra class, an ML survey class, and an advanced topics class on structured learning at Caltech. Those helped me obtain a broad knowledge of ML, and then I’ve gained deeper understandings of some subfields that interest me or are especially relevant by reading papers closely (chasing down references and anything I don’t understand and/or implementing the core algorithms myself).&lt;/p&gt;
+
+&lt;h2 id=&quot;general-advice-and-where-to-start&quot;&gt;General advice and where to start&lt;/h2&gt;
+
+&lt;p&gt;More generally, to do applied ML you need to be able to:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Put your data into your model.&lt;/li&gt;
+  &lt;li&gt;Understand at a high level what the model is doing.&lt;/li&gt;
+  &lt;li&gt;Analyze the results.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For 1 and 3, programming is essential. The most popular language for ML right now is Python, but programming skills transfer pretty well between languages and frameworks.&lt;/p&gt;
+
+&lt;p&gt;For 2 and 3, you need undergraduate-level probability and statistics (you should know, for example, what probability density functions and random variables are). Introductory linear algebra is also helpful here, as it underpins a lot of the data manipulations and theory behind machine learning algorithms.&lt;/p&gt;
+
+&lt;p&gt;If you are interested in developing methods or even moving towards core machine learning research, then the mathematical and formal computer science knowledge required will obviously become much more stringent, but my advice when starting out would be to pick a problem you’re interested in, learn what you need to solve that problem, and then learn more as you go along.&lt;/p&gt;
+
+&lt;h2 id=&quot;some-resources&quot;&gt;Some resources&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Caltech’s &lt;a href=&quot;http://justinbois.github.io/bootcamp/2018/&quot;&gt;Programming Bootcamp for Biologists&lt;/a&gt;, taught by Justin Bois&lt;/li&gt;
+  &lt;li&gt;Caltech’s &lt;a href=&quot;http://bebi103.caltech.edu.s3-website-us-east-1.amazonaws.com/2018/&quot;&gt;Data Analysis in the Biological Sciences&lt;/a&gt;, taught by Justin Bois&lt;/li&gt;
+  &lt;li&gt;Stanford’s &lt;a href=&quot;http://cs229.stanford.edu/syllabus.html&quot;&gt;ML Intro course&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;All the Stanford deep learning classes are well-taught and have resources online.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Kevin Kaichuang Yang (楊凱筌)</name></author><summary type="html">Every so often, a chemist or biologist will ask me how they can get started in machine learning. Here is my current answer:</summary></entry><entry><title type="html">Responding to ‘That’s not biology/chemistry!</title><link href="http://localhost:4000/2019/06/11/responding.html" rel="alternate" type="text/html" title="Responding to 'That's not biology/chemistry!" /><published>2019-06-11T04:00:00-04:00</published><updated>2019-06-11T04:00:00-04:00</updated><id>http://localhost:4000/2019/06/11/responding</id><content type="html" xml:base="http://localhost:4000/2019/06/11/responding.html">&lt;p&gt;When Frances won the Nobel Prize in Chemistry, a Spanish chemist emailed her asking for advice on colleagues who claimed that their work wasn’t chemistry at all because it used machine learning:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;A few analytical-chemistry people are criticizing our work because we use machine learning and neural networks as chemometrical tools for solving some identification/discrimination problems. In one particular undergraduate work we use multispectral data (imaging) and neural networks (e.g., CNN programmed in Matlab) for differentiating dogs from wolfs bite-marks.&lt;/p&gt;

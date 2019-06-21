@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Adventures in Machine Learning and Biology</title>
-  <meta name="description" content="">
+  <title>Getting started in machine learning</title>
+  <meta name="description" content="Every so often, a chemist or biologist will ask me how they can get started in machine learning. Here is my current answer:">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/2019/06/21/getting-started.html">
   <link rel="alternate" type="application/rss+xml" title="Adventures in Machine Learning and Biology" href="/feed.xml">
   
   
@@ -77,74 +77,54 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <p>I’m a computational biologist working at the intersection of machine learning and biology. I’m especially interested in models for biological sequences such as proteins and nucleic acids. I am currently a machine learning scientist at VL57, a Flagship Pioneering company.</p>
-
-<p>Here’s some more background <a href="/about">about me</a> and details about <a href="/research">my research</a>. My resume can be found <a href="https://github.com/yangkky/resume/blob/master/KKY_cv.pdf">here</a>.</p>
-
-<h3 id="research">Research</h3>
-
-<p>Machine learning is the science of getting computers to learn from data instead of being explicitly programmed. In the past decade, machine learning has given us machine translation, self-driving cars, and effective web search. As DNA-sequencing and synthesis technology improves, humanity is amassing a vast collection of biological sequence data. Machine learning will be a vital approach for understanding and using this data.</p>
-
-<p>My PhD research used machine learning to attack challenges in protein engineering that are otherwise intractable because they are both too complex to be designed from first principles and not amenable to the high-throughput screens used in directed evolution. I collaborated with scientists both in the Arnold lab and in other groups to design enzymes and light-sensitive proteins with unique properties. I also worked on building sequence-function models tailored to biological sequences and on methods for using ML sequence-function models to guide directed evolution.</p>
-
-
-  <h1 class="page-heading">Posts</h1>
-
-
-  <ul class="post-list">
-    
-      <li>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Getting started in machine learning</h1>
+    <p class="post-meta">
+      <time datetime="2019-06-20T20:00:00-04:00" itemprop="datePublished">
         
-        <span class="post-meta">Jun 21, 2019</span>
+        Jun 21, 2019
+      </time>
+      </p>
+  </header>
 
-        <h2>
-          <a class="post-link" href="/2019/06/21/getting-started.html">Getting started in machine learning</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Jun 11, 2019</span>
+  <div class="post-content" itemprop="articleBody">
+    <p>Every so often, a chemist or biologist will ask me how they can get started in machine learning. Here is my current answer:</p>
 
-        <h2>
-          <a class="post-link" href="/2019/06/11/responding.html">Responding to &#39;That&#39;s not biology/chemistry!</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">May 15, 2019</span>
+<h2 id="my-experience">My experience</h2>
 
-        <h2>
-          <a class="post-link" href="/2019/05/15/reflections-on-aistats2019.html">Reflections on AIStats2019</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Mar 26, 2018</span>
+<p>When I started out, I had a strong quantitative background (chemical engineering undergrad, was taking PhD courses in chemical engineering) and some functional skills in programming. From there, I first dove deep into one type of machine learning (Gaussian processes) along with general ML practice (how to set up ML experiments in order to evaluate your models) because that was what I needed for my project. I learned mostly online and by reading papers, but I also took one class on data analysis for biologists that wasn’t ML-focused but did cover programming and statistical thinking. Later, I took a linear algebra class, an ML survey class, and an advanced topics class on structured learning at Caltech. Those helped me obtain a broad knowledge of ML, and then I’ve gained deeper understandings of some subfields that interest me or are especially relevant by reading papers closely (chasing down references and anything I don’t understand and/or implementing the core algorithms myself).</p>
 
-        <h2>
-          <a class="post-link" href="/2018/03/26/pytorch-from-keras.html">A Journey from Keras to Pytorch</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Mar 26, 2018</span>
+<h2 id="general-advice-and-where-to-start">General advice and where to start</h2>
 
-        <h2>
-          <a class="post-link" href="/2018/03/26/learning-the-language-of-proteins.html">Learning the language of proteins</a>
-        </h2>
-      </li>
-    
-  </ul>
+<p>More generally, to do applied ML you need to be able to:</p>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<ol>
+  <li>Put your data into your model.</li>
+  <li>Understand at a high level what the model is doing.</li>
+  <li>Analyze the results.</li>
+</ol>
 
-</div>
+<p>For 1 and 3, programming is essential. The most popular language for ML right now is Python, but programming skills transfer pretty well between languages and frameworks.</p>
+
+<p>For 2 and 3, you need undergraduate-level probability and statistics (you should know, for example, what probability density functions and random variables are). Introductory linear algebra is also helpful here, as it underpins a lot of the data manipulations and theory behind machine learning algorithms.</p>
+
+<p>If you are interested in developing methods or even moving towards core machine learning research, then the mathematical and formal computer science knowledge required will obviously become much more stringent, but my advice when starting out would be to pick a problem you’re interested in, learn what you need to solve that problem, and then learn more as you go along.</p>
+
+<h2 id="some-resources">Some resources</h2>
+
+<ul>
+  <li>Caltech’s <a href="http://justinbois.github.io/bootcamp/2018/">Programming Bootcamp for Biologists</a>, taught by Justin Bois</li>
+  <li>Caltech’s <a href="http://bebi103.caltech.edu.s3-website-us-east-1.amazonaws.com/2018/">Data Analysis in the Biological Sciences</a>, taught by Justin Bois</li>
+  <li>Stanford’s <a href="http://cs229.stanford.edu/syllabus.html">ML Intro course</a></li>
+  <li>All the Stanford deep learning classes are well-taught and have resources online.</li>
+</ul>
+
+  </div>
+
+  
+</article>
 
       </div>
     </main>
