@@ -177,13 +177,14 @@ Let's take a look at the changes to each function. I've fenced off the new code 
 {% highlight python linenos %}
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-n', '--nodes', default=1, 
-    						 type=int, metavar='N')
+    parser.add_argument('-n', '--nodes', default=1,
+                        type=int, metavar='N')
     parser.add_argument('-g', '--gpus', default=1, type=int,
                         help='number of gpus per node')
     parser.add_argument('-nr', '--nr', default=0, type=int,
                         help='ranking within the nodes')
-    parser.add_argument('--epochs', default=2, type=int, metavar='N',
+    parser.add_argument('--epochs', default=2, type=int, 
+                        metavar='N',
                         help='number of total epochs to run')
     args = parser.parse_args()
     #########################################################
@@ -234,11 +235,11 @@ def train(gpu, args):
     criterion = nn.CrossEntropyLoss().cuda(gpu)
     optimizer = torch.optim.SGD(model.parameters(), 1e-4)
     
-    #################################################################
+    ###############################################################
     # Wrap the model
     model = nn.parallel.DistributedDataParallel(model,
                                                 device_ids=[gpu])
-    #################################################################
+    ###############################################################
 
     # Data loading code
     train_dataset = torchvision.datasets.MNIST(
