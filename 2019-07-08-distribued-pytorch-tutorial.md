@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Distributed data parallel training in Pytorch"
-date: 2019-07-05 00:00:00 -0800
+date: 2019-07-08 00:00:00 -0800
 ---
 
 
@@ -146,8 +146,13 @@ def train(gpu, args):
             loss.backward()
             optimizer.step()
             if (i + 1) % 100 == 0 and gpu == 0:
-                print('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}'.format(epoch + 1, args.epochs, i + 1, total_step,
-                                                                         loss.item()))
+                print('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}'.format(
+                    epoch + 1, 
+                    args.epochs, 
+                    i + 1, 
+                    total_step,
+                    loss.item())
+                   )
     if gpu == 0:
         print("Training complete in: " + str(datetime.now() - start))
 ```
@@ -172,7 +177,8 @@ Let's take a look at the changes to each function. I've fenced off the new code 
 {% highlight python linenos %}
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-n', '--nodes', default=1, type=int, metavar='N')
+    parser.add_argument('-n', '--nodes', default=1, 
+    						 type=int, metavar='N')
     parser.add_argument('-g', '--gpus', default=1, type=int,
                         help='number of gpus per node')
     parser.add_argument('-nr', '--nr', default=0, type=int,
@@ -210,7 +216,7 @@ Next, let's look at the modifications to `train`. I'll fence the new lines again
 
 {% highlight python linenos %}
 def train(gpu, args):
-    ######################################################################
+    ############################################################
     rank = args.nr * args.gpus + gpu	                          
     dist.init_process_group(                                   
     	backend='nccl',                                         
@@ -218,7 +224,7 @@ def train(gpu, args):
     	world_size=args.world_size,                              
     	rank=rank                                               
     )                                                          
-    ######################################################################
+    ############################################################
     
     model = ConvNet()
     torch.cuda.set_device(gpu)
@@ -228,56 +234,42 @@ def train(gpu, args):
     criterion = nn.CrossEntropyLoss().cuda(gpu)
     optimizer = torch.optim.SGD(model.parameters(), 1e-4)
     
-    ######################################################################
+    #################################################################
     # Wrap the model
-    model = nn.parallel.DistributedDataParallel(model, device_ids=[gpu])
-    ######################################################################
+    model = nn.parallel.DistributedDataParallel(model,
+                                                device_ids=[gpu])
+    #################################################################
 
     # Data loading code
-    train_dataset = torchvision.datasets.MNIST(root='./data',
-                                               train=True,
-                                               transform=transforms.ToTensor(),
-                                               download=True)
-                                               
-    ######################################################################
+    train_dataset = torchvision.datasets.MNIST(
+        root='./data',
+        train=True,
+        transform=transforms.ToTensor(),
+        download=True
+    )                                               
+    ################################################################
     train_sampler = torch.utils.data.distributed.DistributedSampler(
     	train_dataset,
     	num_replicas=args.world_size,
     	rank=rank
     )
-    ######################################################################
+    ################################################################
 
-    train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
-                                               batch_size=batch_size,
-    ######################################################################
-                                               shuffle=False,            #
-    ######################################################################
-                                               num_workers=0,
-                                               pin_memory=True,
-    ######################################################################
-                                               sampler=train_sampler)    # 
-    ######################################################################
-
-    start = datetime.now()
-    total_step = len(train_loader)
-    for epoch in range(args.epochs):
-        for i, (images, labels) in enumerate(train_loader):
-            images = images.cuda(non_blocking=True)
-            labels = labels.cuda(non_blocking=True)
-            # Forward pass
-            outputs = model(images)
-            loss = criterion(outputs, labels)
-
-            # Backward and optimize
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
-            if (i + 1) % 100 == 0 and gpu == 0:
-                print('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}'.format(epoch + 1, args.epochs, i + 1, total_step,
-                                                                         loss.item()))
-    if gpu == 0:
-        print("Training complete in: " + str(datetime.now() - start))
+    train_loader = torch.utils.data.DataLoader(
+    	dataset=train_dataset,
+       batch_size=batch_size,
+    ##############################
+       shuffle=False,            #
+    ##############################
+       num_workers=0,
+       pin_memory=True,
+    #############################
+      sampler=train_sampler)    # 
+    #############################
+    ...
 {% endhighlight %}
+
+For the sake of concision, I've taken out the training loop from the example here, replacing it with `...`, but it is still in the [full script](https://github.com/yangkky/distributed_tutorial/blob/master/src/mnist-distributed.py). 
 
 Line 3: This is the global rank of the process within all of the processes (one process per GPU). We'll use this for line 6. 
 
@@ -322,10 +314,11 @@ Mixed precision training (training in a combination of float (FP32) and half (FP
     criterion = nn.CrossEntropyLoss().cuda(gpu)
     optimizer = torch.optim.SGD(model.parameters(), 1e-4)
     # Wrap the model
-    ######################################################################
-    model, optimizer = amp.initialize(model, optimizer, opt_level='O2')
+    ##############################################################
+    model, optimizer = amp.initialize(model, optimizer, 
+                                      opt_level='O2')
     model = DDP(model)
-    ######################################################################
+    ##############################################################
     # Data loading code
 	...
     start = datetime.now()
@@ -340,10 +333,10 @@ Mixed precision training (training in a combination of float (FP32) and half (FP
 
             # Backward and optimize
             optimizer.zero_grad()
-    ######################################################################
+    ##############################################################
             with amp.scale_loss(loss, optimizer) as scaled_loss:
                 scaled_loss.backward()
-    ######################################################################
+    ##############################################################
             optimizer.step()
      ...
 {% endhighlight %}
