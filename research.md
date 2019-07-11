@@ -26,3 +26,24 @@ The second limitation arises because directed evolution discards all the informa
 I've applied this approach to engineer channelrhodopsins (ChRs) for [membrane localization](https://doi.org/10.1371/journal.pcbi.1005786) in mammalian cells and to produce [stronger currents](https://www.biorxiv.org/content/10.1101/565606v1) across the cell membrane when activated by light. ChRs are often artificially expressed in neurons so that the neurons can be activated by shining lights on them, in a process known as optogenetics. We can only screen about 2 variants a week for the properties we care about, so traditional directed evolution doesn't work here!
 
 In the second half of my PhD, I focused on developing methods for the two key steps in the machine learning-guided directed evolution process: the ML sequence-function model, and ML-guided selection for using that model to choose the next set of proteins to characterize. I developed a way to [learn vector representations](https://academic.oup.com/bioinformatics/article/34/23/4138/5042984) of proteins that leverages information in unlabeled sequences and a [method](https://arxiv.org/abs/1904.08102) for using information in a machine learning model to design site-saturation mutagenesis libraries. 
+
+# Publications
+**"Batched stochastic Bayesian optimization via combinatorial constraints design."** Yang KK, Chen Y, Lee A, Yue Y. AIStats 2019. [arxiv](http://arxivs.org/abs/1904.08102).
+
+**"Learned protein embeddings for machine learning."** Yang KK, Wu Z, Bedbrook CN, Arnold FH. *Bioinformatics*. 23 March 2018.  [doi.org/10.1093/bioinformatics/bty178](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty178/4951834?guestAccessKey=aa420938-7c4a-4c47-8763-bad82d936d10).
+
+**“Machine learning to predict eukaryotic expression and plasma membrane localization of engineered integral membrane proteins.”** Bedbrook CN, Yang KK, Rice AJ, Gradinaru V, Arnold FH. *PLOS Computational Biology* 13(10): e1005786 (2017). [doi.org/10.1371/journal.pcbi.1005786](https://doi.org/10.1371/journal.pcbi.1005786).
+
+**“Structure-Guided SCHEMA Recombination Generates Diverse Chimeric Channelrhodopsins.”**  C. N. Bedbrook, A. J. Rice, K. K. Yang, X. Ding, S. Chen, E. M. LeProust, V. Gradinaru, F. H. Arnold. *Proceedings of the National Academy of Sciences* 114, E2624-E2633 (2017). [doi/10.1073/pnas.170026911](https://doi/10.1073/pnas.170026911).
+
+# Preprints
+**“Machine learning-guided channelrhodopsin engineering enables minimally-invasive optogenetics.”** Bedbrook CN, Yang KK, Robinson JE, Gradinaru V, Arnold FH. [[biorXiv](https://doi.org/10.1101/565606)].
+
+**“Machine learning in protein engineering.”** Yang KK, Wu Z, Arnold FH. [[arxiv](https://arxiv.org/abs/1811.10775)].
+
+# Presentations
+**"Probabilistic protein engineering."** Janelia Research Center. 30 May 2019. 
+
+**"Learning the language of proteins."** Gray-Hill Seminar, Occidental College. 29 June 2018.
+
+**"Machine Learning to Predict Eukaryotic Expression and Plasma Membrane Localization of an Integral Membrane Protein."** Proteins Gordon Research Seminar. 18 June 2017.
