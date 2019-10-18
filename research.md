@@ -28,9 +28,15 @@ I've applied this approach to engineer channelrhodopsins (ChRs) for [membrane lo
 In the second half of my PhD, I focused on developing methods for the two key steps in the machine learning-guided directed evolution process: the ML sequence-function model, and ML-guided selection for using that model to choose the next set of proteins to characterize. I developed a way to [learn vector representations](https://academic.oup.com/bioinformatics/article/34/23/4138/5042984) of proteins that leverages information in unlabeled sequences and a [method](https://arxiv.org/abs/1904.08102) for using information in a machine learning model to design site-saturation mutagenesis libraries. 
 
 # Publications
+
+**Machine learning-guided channelrhodopsin engineering enables minimally-invasive optogenetics.** Bedbrook CN, Yang KK, Robinson JE, Gradinaru V, Arnold FH. *Nature Methods,* October 14, 2019. [10.1038/s41592-019-0583-8](https://doi.org/10.1038/s41592-019-0583-8).
+
 **Machine-learning-guided directed evolution for protein engineering.** Yang KK, Wu Z, Arnold FH. *Nature Methods*, July 15, 2019. [10.1038/s41592-019-0496-6](https://doi.org/10.1038/s41592-019-0496-6).
 
 **"Batched stochastic Bayesian optimization via combinatorial constraints design."** Yang KK, Chen Y, Lee A, Yue Y. AIStats 2019. [arxiv](http://arxivs.org/abs/1904.08102).
+
+**The Generation of Thermostable Fungal Laccase Chimeras by SCHEMA-RASPP Structure-Guided Recombination in Vivo.** Mateljak I, Rice A, Yang KK, Tron T, Alcalde M. *
+*ACS Synthetic Biology,* March 21, 2019. [10.1021/acssynbio.8b00509](https://doi.org/10.1021/acssynbio.8b00509)
 
 **"Learned protein embeddings for machine learning."** Yang KK, Wu Z, Bedbrook CN, Arnold FH. *Bioinformatics*. 23 March 2018.  [doi.org/10.1093/bioinformatics/bty178](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty178/4951834?guestAccessKey=aa420938-7c4a-4c47-8763-bad82d936d10).
 
