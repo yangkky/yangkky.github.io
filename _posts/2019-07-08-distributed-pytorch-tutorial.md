@@ -4,6 +4,7 @@ title: "Distributed data parallel training in Pytorch"
 date: 2019-07-08 00:00:00 -0800
 ---
 
+*Edited 18 Oct 2019: we need to set the random seed in each process so that the models are initialized with the same weights. Thanks to the anonymous emailer who pointed this out.*
 
 ## Motivation
 
@@ -113,6 +114,7 @@ And here's the train function.
 
 ```python
 def train(gpu, args):
+	torch.manual_seed(0)
     model = ConvNet()
     torch.cuda.set_device(gpu)
     model.cuda(gpu)
@@ -227,6 +229,7 @@ def train(gpu, args):
     )                                                          
     ############################################################
     
+    torch.manual_seed(0)
     model = ConvNet()
     torch.cuda.set_device(gpu)
     model.cuda(gpu)
