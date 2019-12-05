@@ -38,11 +38,11 @@ In the second half of my PhD, I focused on developing methods for the two key st
 **The Generation of Thermostable Fungal Laccase Chimeras by SCHEMA-RASPP Structure-Guided Recombination in Vivo.** Mateljak I, Rice A, Yang KK, Tron T, Alcalde M. *
 *ACS Synthetic Biology,* March 21, 2019. [10.1021/acssynbio.8b00509](https://doi.org/10.1021/acssynbio.8b00509)
 
-**"Learned protein embeddings for machine learning."** Yang KK, Wu Z, Bedbrook CN, Arnold FH. *Bioinformatics*. 23 March 2018.  [doi.org/10.1093/bioinformatics/bty178](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty178/4951834?guestAccessKey=aa420938-7c4a-4c47-8763-bad82d936d10).
+**"Learned protein embeddings for machine learning."** Yang KK, Wu Z, Bedbrook CN, Arnold FH. *Bioinformatics*. 23 March 2018.  [10.1093/bioinformatics/bty178](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty178/4951834?guestAccessKey=aa420938-7c4a-4c47-8763-bad82d936d10).
 
-**“Machine learning to predict eukaryotic expression and plasma membrane localization of engineered integral membrane proteins.”** Bedbrook CN, Yang KK, Rice AJ, Gradinaru V, Arnold FH. *PLOS Computational Biology* 13(10): e1005786 (2017). [doi.org/10.1371/journal.pcbi.1005786](https://doi.org/10.1371/journal.pcbi.1005786).
+**“Machine learning to predict eukaryotic expression and plasma membrane localization of engineered integral membrane proteins.”** Bedbrook CN, Yang KK, Rice AJ, Gradinaru V, Arnold FH. *PLOS Computational Biology* 13(10): e1005786 (2017). [10.1371/journal.pcbi.1005786](https://doi.org/10.1371/journal.pcbi.1005786).
 
-**“Structure-Guided SCHEMA Recombination Generates Diverse Chimeric Channelrhodopsins.”**  C. N. Bedbrook, A. J. Rice, K. K. Yang, X. Ding, S. Chen, E. M. LeProust, V. Gradinaru, F. H. Arnold. *Proceedings of the National Academy of Sciences* 114, E2624-E2633 (2017). [doi/10.1073/pnas.170026911](https://doi.org/10.1073/pnas.1700269114).
+**“Structure-Guided SCHEMA Recombination Generates Diverse Chimeric Channelrhodopsins.”**  C. N. Bedbrook, A. J. Rice, K. K. Yang, X. Ding, S. Chen, E. M. LeProust, V. Gradinaru, F. H. Arnold. *Proceedings of the National Academy of Sciences* 114, E2624-E2633 (2017). [10.1073/pnas.170026911](https://doi.org/10.1073/pnas.1700269114).
 
 # Preprints
 **“Machine learning-guided channelrhodopsin engineering enables minimally-invasive optogenetics.”** Bedbrook CN, Yang KK, Robinson JE, Gradinaru V, Arnold FH. [biorXiv](https://doi.org/10.1101/565606).
