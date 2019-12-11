@@ -13,7 +13,7 @@ I got to Logan at 4am yesterday and got to Vancouver 4 flights and 20 hours late
 - With that said, this is the first conference I've been to where I know people. Between people from my company, people I met at AIStats, and people who have reached out to me asking to meet, I really feel much more comfortable here than I have at any other conference. 
 - I wish the oral and spotlight titles were in the printed program. The conference app is ok, but it's a fair number of clicks to find the talk titles. 
 - The sponsor booths here are much more impressive than they were at ISMB. 
-- Novartis was the only Biotech company in the sponsor area. The rest of them really need to step it up and stop letting the financial companies have such an outsize presence. 
+- Novartis and Benevolent AI are the only Biotech companines in the sponsor area. The rest of them really need to step it up and stop letting the financial companies have such an outsize presence. 
 - Sometimes it's fun to go to a session about things I don't really study (reinforcement learning, in this case)
 - The dynamic range of talk quality is huge. I've started to just tune out talks after the second slide if I can't follow. 
 
