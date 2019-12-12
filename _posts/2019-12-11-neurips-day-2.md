@@ -13,7 +13,7 @@ Today started with a meetup for Boston-area people. It's always a little strange
 - [Philip Paquette](https://ppaquette.io/)
 - [David Yang](https://twitter.com/davidkmyang)
 - [Sam Sinai](https://twitter.com/samsinai)
-- [Elina Locane](https://twitter.com/elooopy?lang=en) 
+- [Elīna Locān](https://twitter.com/elooopy?lang=en) 
 - [Neil Thomas](https://twitter.com/countablyfinite?lang=en)
 - [Roshan Rao](https://rmrao.github.io/)
 - [Nicholas Bhattacharya](https://nickbhat.github.io/)
