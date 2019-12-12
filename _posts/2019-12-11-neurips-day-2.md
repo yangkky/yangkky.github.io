@@ -6,7 +6,7 @@ date: 2019-12-11 21:00:00 -0800
 
 Today started with a meetup for Boston-area people. It's always a little strange to fly across the continent to meet with people from the same city, but it was really fun to meet people who I could concievably easily see again. In my past conferences, I haven't really known anybody and would often wander around awkwardly at mealtimes, so I've gone a little bit overboard this time with setting up meals with people beforehand. It also helps that people are starting to reach out to me asking to meet. End result is that I've gotten to meet a lot of interesting people the last couple days, including: 
 
-- [Trenton Bricken](https://slatestarcodex.com/)
+- [Trenton Bricken](https://twitter.com/TrentonBricken)
 - [Amy Lu](https://twitter.com/amyxlu)
 - [Alex Lu](https://twitter.com/alexijielu)
 - [Alan Moses](http://www.moseslab.csb.utoronto.ca/)
