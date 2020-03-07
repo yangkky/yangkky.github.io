@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-I am currently a machine learning scientist at VL56, a [Flagship Pioneering](https://www.flagshippioneering.com/) company.
+I am currently a machine learning scientist at [Generate Biomedicines](https://generatebiomedicines.com/), a [Flagship Pioneering](https://www.flagshippioneering.com/) company.
 
 From 2014-2018, I was a PhD student in Chemical Engineering at Caltech. I worked in Frances Arnold's [lab](http://cheme.che.caltech.edu/groups/fha/). The Arnold lab is best known for its pioneering use of [directed evolution](https://en.wikipedia.org/wiki/Directed_evolution) to create useful proteins without requiring a deep understanding of the biophysical underpinnings of protein folding and function. Recently, they've been designing new [light-sensitive proteins](http://www.pnas.org/content/early/2017/03/09/1700269114.abstract) for applications in neuroscience and evolving an enzyme to make [carbon-silicon bonds](http://science.sciencemag.org/content/354/6315/1048.full?ijkey=mIJS6o5p4H63Y&keytype=ref&siteid=sci). They also pioneered the use of [machine learning for protein engineering](http://cheme.che.caltech.edu/groups/fha/publications/Romero_PNAS2012.pdf).
 
