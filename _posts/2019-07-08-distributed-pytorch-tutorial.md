@@ -4,6 +4,7 @@ title: "Distributed data parallel training in Pytorch"
 date: 2019-07-08 00:00:00 -0800
 ---
 
+*Edited 18 Oct 2019: we need to set the random seed in each process so that the models are initialized with the same weights. Thanks to the anonymous emailer who pointed this out.*
 
 ## Motivation
 
@@ -113,6 +114,7 @@ And here's the train function.
 
 ```python
 def train(gpu, args):
+	torch.manual_seed(0)
     model = ConvNet()
     torch.cuda.set_device(gpu)
     model.cuda(gpu)
@@ -227,6 +229,7 @@ def train(gpu, args):
     )                                                          
     ############################################################
     
+    torch.manual_seed(0)
     model = ConvNet()
     torch.cuda.set_device(gpu)
     model.cuda(gpu)
@@ -278,9 +281,9 @@ Lines 4 - 6: Initialize the process and join up with the other processes. This i
 
 Line 23: Wrap the model as a [`DistributedDataParallel`](https://pytorch.org/docs/stable/nn.html#distributeddataparallel) model. This reproduces the model onto the GPU for the process. 
 
-Lines 32-36: The [`nn.utils.data.DistributedSampler`](https://pytorch.org/docs/stable/_modules/torch/utils/data/distributed.html) makes sure that each process gets a different slice of the training data. 
+Lines 35-39: The [`nn.utils.data.DistributedSampler`](https://pytorch.org/docs/stable/_modules/torch/utils/data/distributed.html) makes sure that each process gets a different slice of the training data. 
 
-Lines 42 and 47: Use the `nn.utils.data.DistributedSampler` instead of shuffling the usual way. 
+Lines 46 and 51: Use the `nn.utils.data.DistributedSampler` instead of shuffling the usual way. 
 
 To run this on, say, 4 nodes with 8 GPUs each, we need 4 terminals (one on each node). On node 0 (as set by line 13 in `main`): 
 
@@ -306,7 +309,8 @@ Mixed precision training (training in a combination of float (FP32) and half (FP
         init_method='env://',
         world_size=args.world_size,
         rank=rank)
-
+        
+	torch.manual_seed(0)
     model = ConvNet()
     torch.cuda.set_device(gpu)
     model.cuda(gpu)
@@ -342,11 +346,11 @@ Mixed precision training (training in a combination of float (FP32) and half (FP
      ...
 {% endhighlight %}
 
-Line 17: [`amp.initialize`](https://nvidia.github.io/apex/amp.html#unified-api) wraps the model and optimizer for mixed precision training. Note that that the model must already be on the correct GPU before calling `amp.initialize`. The `opt_level` goes from `O0`, which uses all floats, through `O3`, which uses half-precision throughout. `O1` and `O2` are different degrees of mixed-precision, the details of which can be found in the Apex [documentation](https://nvidia.github.io/apex/amp.html#opt-levels-and-properties). Yes, the first character in all those codes is a capital letter 'O', while the second character is a number. Yes, if you use a zero instead, you will get a baffling error message. 
+Line 18: [`amp.initialize`](https://nvidia.github.io/apex/amp.html#unified-api) wraps the model and optimizer for mixed precision training. Note that that the model must already be on the correct GPU before calling `amp.initialize`. The `opt_level` goes from `O0`, which uses all floats, through `O3`, which uses half-precision throughout. `O1` and `O2` are different degrees of mixed-precision, the details of which can be found in the Apex [documentation](https://nvidia.github.io/apex/amp.html#opt-levels-and-properties). Yes, the first character in all those codes is a capital letter 'O', while the second character is a number. Yes, if you use a zero instead, you will get a baffling error message. 
 
-Line 18: [`apex.parallel.DistributedDataParallel`](https://nvidia.github.io/apex/parallel.html) is a drop-in replacement for `nn.DistributedDataParallel`. We no longer have to specify the GPUs because Apex only allows one GPU per process. It also assumes that the script calls `torch.cuda.set_device(local_rank)`(line 10) before moving the model to GPU. 
+Line 20: [`apex.parallel.DistributedDataParallel`](https://nvidia.github.io/apex/parallel.html) is a drop-in replacement for `nn.DistributedDataParallel`. We no longer have to specify the GPUs because Apex only allows one GPU per process. It also assumes that the script calls `torch.cuda.set_device(local_rank)`(line 10) before moving the model to GPU. 
 
-Lines 36-37: Mixed-precision training requires that the loss is [scaled](https://devblogs.nvidia.com/mixed-precision-training-deep-neural-networks/) in order to prevent the gradients from underflowing. Apex does this automatically. 
+Lines 37-38: Mixed-precision training requires that the loss is [scaled](https://devblogs.nvidia.com/mixed-precision-training-deep-neural-networks/) in order to prevent the gradients from underflowing. Apex does this automatically. 
 
 This script is run the same way as the distributed training script. 
 
