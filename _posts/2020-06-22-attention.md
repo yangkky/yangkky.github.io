@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Linear attention"
+title: "Two approaches to faster attention"
 date: 2020-06-22 00:00:00 -0800
 ---
 
