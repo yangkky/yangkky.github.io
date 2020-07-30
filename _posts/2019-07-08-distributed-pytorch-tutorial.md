@@ -6,9 +6,11 @@ date: 2019-07-08 00:00:00 -0800
 
 *Edited 18 Oct 2019: we need to set the random seed in each process so that the models are initialized with the same weights. Thanks to the anonymous emailer who pointed this out.*
 
+*Edited 30 July 2020 to clarify the meanings of nodes and processes.* 
+
 ## Motivation
 
-The easiest way to speed up neural network training is to use a GPU, which provides large speedups over CPUs on the types of calculations (matrix multiplies and additions) that are common in neural networks. As the model or dataset gets bigger, one GPU quickly becomes insufficient. For example, big language models such as [BERT](https://arxiv.org/abs/1810.04805) and [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) are trained on hundreds of GPUs. To multi-GPU training, we must have a way to split the model and data between different GPUs and to coordinate the training. 
+The easiest way to speed up neural network training is to use a GPU, which provides large speedups over CPUs on the types of calculations (matrix multiplies and additions) that are common in neural networks. As the model or dataset gets bigger, one GPU quickly becomes insufficient. For example, big language models such as [BERT](https://arxiv.org/abs/1810.04805) and [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) are trained on hundreds of GPUs. To perform  multi-GPU training, we must have a way to split the model and data between different GPUs and to coordinate the training. 
 
 
 ### Why distributed data parallel?
@@ -38,7 +40,7 @@ This tutorial is really directed at people who are already familiar with trainin
 
 ## The big picture
 
-Multiprocessing with `DistributedDataParallel` duplicates the model across multiple GPUs, each of which is controlled by one process. (If you want, you can have each process control multiple GPUs, but that should be obviously slower than having one GPU per process. It's also possible to have multiple worker processes that fetch data for each GPU, but I'm going to leave that out for the sake of simplicity.) The GPUs can all be on the same node or spread across multiple nodes. Every process does identical tasks, and each process communicates with all the others. Only gradients are passed between the processes/GPUs so that network communication is less of a bottleneck. 
+Multiprocessing with `DistributedDataParallel` duplicates the model across multiple GPUs, each of which is controlled by one process. (A process is an instance of python running on the computer; by having multiple processes running in parallel, we can take advantage of procressors with multiple CPU cores. If you want, you can have each process control multiple GPUs, but that should be obviously slower than having one GPU per process. It's also possible to have multiple worker processes that fetch data for each GPU, but I'm going to leave that out for the sake of simplicity.) The GPUs can all be on the same node or spread across multiple nodes. (A node is one "computer," including all of its CPUs and GPUs. If you're using AWS, a node is one EC2 instance.) Every process does identical tasks, and each process communicates with all the others. Only gradients are passed between the processes/GPUs so that network communication is less of a bottleneck. 
 
 ![big picture]({{ site.baseurl }}/assets/processes-gpus.png)
 
