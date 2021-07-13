@@ -8,7 +8,7 @@ permalink: /research/
 
 I am currently broadly interested in problems at the intersection of biology and machine learning. Some of my current interests include: 
 
-- Generative modelsand pretraining for proteins and chemistry
+- Generative models and pretraining for proteins and chemistry
 - Machine learning for protein engineering
 - Uncertainty quantification in neural networks
 
