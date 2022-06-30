@@ -47,8 +47,7 @@ Samuel Goldman, Ria Das, Kevin K Yang, Connor W Coley. *PLoS computational biolo
 
 **Adaptive machine learning for protein engineering.** Brian L. Hie and Kevin K. Yang. C*urrent Opinion in Structural Biology*, 2022. [10.1016/j.sbi.2021.11.002](https://doi.org/10.1016/j.sbi.2021.11.002)
 
-**FLIP: Benchmark tasks in fitness landscape inference for proteins
-.** Christian Dallago, Jody Mou, Kadina E. Johnston, Bruce J. Wittmann, Nicholas Bhattacharya, Samuel Goldman, Ali Madani, Kevin K. Yang. *NeurIPS 2021 Datasets and Benchmarks Track.* [10.1101/2021.11.09.467890](https://doi.org/10.1101/2021.11.09.467890)
+**FLIP: Benchmark tasks in fitness landscape inference for proteins.** Christian Dallago, Jody Mou, Kadina E. Johnston, Bruce J. Wittmann, Nicholas Bhattacharya, Samuel Goldman, Ali Madani, Kevin K. Yang. *NeurIPS 2021 Datasets and Benchmarks Track.* [10.1101/2021.11.09.467890](https://doi.org/10.1101/2021.11.09.467890)
 
 **Protein sequence design with deep generative models.**  Zachary Wu, Kadina E. Johnston, Frances H. Arnold, and Kevin K. Yang. *Current Opinion in Chemical Biology*, 2021. [10.1016/j.cbpa.2021.04.004](https://doi.org/10.1016/j.cbpa.2021.04.004)
 
@@ -79,12 +78,11 @@ Mingyang Hu, Fajie Yuan, Kevin K. Yang, Fusong Ju, Jin Su, Hui Wang, Fei Yang, Q
 **Masked inverse folding with sequence transfer for protein representation learning.**
 Kevin K. Yang, Niccolò Zanichelli, Hugh Yeh. [biorxiv](https://doi.org/10.1101/2022.05.25.493516)
 
-**Convolutions are competitive with transformers for protein sequence pretraining.** Kevin K. Yang, Alex X. Lu, Nicolo Fusi. [10.1101/2022.05.19.492714](https://doi.org/10.1101/2022.05.19.492714)
+**Convolutions are competitive with transformers for protein sequence pretraining.** Kevin K. Yang, Alex X. Lu, Nicolo Fusi. [biorxiv](https://doi.org/10.1101/2022.05.19.492714)
 
 
 **Randomized gates eliminate bias in sort-seq assays.**
-Brian L. Trippe, Buwei Huang, Erika A. DeBenedictis, Brian Coventry, Nicholas Bhattacharya, Kevin K. Yang, David Baker, Lorin Crawford. [biorxiv](https://doi.org/10.1101/2022.02.17.480881
-)
+Brian L. Trippe, Buwei Huang, Erika A. DeBenedictis, Brian Coventry, Nicholas Bhattacharya, Kevin K. Yang, David Baker, Lorin Crawford. [biorxiv](https://doi.org/10.1101/2022.02.17.480881)
 
 <!--# Presentations
 
