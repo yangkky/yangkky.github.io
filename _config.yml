@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Machine Learning and Biology
+title: Kevin Kaichuang Yang (楊凱筌)
 author: Kevin Kaichuang Yang (楊凱筌)
 email: yangkky@gmail.com
 # description: > # this means to ignore newlines until "baseurl:"
