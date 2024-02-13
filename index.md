@@ -10,5 +10,17 @@ Here's some more [about me](/about) and details about [my research](/research). 
 
 Please email me at yang dot kevin at microsoft dot com if you are interested in collaborating or a research internship. My previous interns include: 
 
-- Amy Wang
-- Kevin Wu
+- [Amy Wang](https://www.gene.com/scientists/our-scientists/amy-wang)
+- [Carolina Rios-Martinez](https://www.linkedin.com/in/carolina-rios-martinez/)
+- [Cydney Martell](https://www.linkedin.com/in/cydneymartell)
+- [Divya Nori](https://divnori.github.io/)
+- Ekene Ezeunala
+- [Francesca-Zhoufan Li](https://www.francescazfl.com/)
+- [Kevin P. Greenman](https://www.kevinpgreenman.com/)
+- [Kevin Wu](https://scholar.google.com/citations?user=W8ghPqEAAAAJ&hl=en)
+- [Nick Bhattacharya](https://nickbhat.github.io/)
+- [Nitya Thakkar](https://nityathakkar.github.io/)
+- [Michael Wornow](https://michaelwornow.net/)
+- [Seyone Chithrananda](https://www.linkedin.com/in/seyone-chithrananda-a5974915b/)
+- [Soumya Ram](https://www.linkedin.com/in/soumya-ram-564a2328/)
+
