@@ -8,4 +8,7 @@ I'm a computational biologist working at the intersection of machine learning an
 
 Here's some more [about me](/about) and details about [my research](/research). My resume can be found [here](https://github.com/yangkky/resume/blob/master/KKY_cv.pdf).
 
-Please email me at yang dot kevin at microsoft dot com if you are interested in collaborating or a research internship. 
+Please email me at yang dot kevin at microsoft dot com if you are interested in collaborating or a research internship. My previous interns include: 
+
+- Amy Wang
+- Kevin Wu
