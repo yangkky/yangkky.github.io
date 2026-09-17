@@ -17,6 +17,9 @@
             {% if site.email %}
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
+            {% if site.google_scholar %}
+            <li><a href="{{ site.google_scholar }}">Google Scholar</a></li>
+            {% endif %}
         </ul>
       </div>
 
@@ -31,6 +34,12 @@
           {% if site.twitter_username %}
           <li>
             {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+
+          {% if site.google_scholar %}
+          <li>
+            {% include icon-scholar.html url=site.google_scholar %}
           </li>
           {% endif %}
         </ul>

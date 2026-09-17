@@ -17,6 +17,8 @@ My research focuses on developing machine learning methods to design and underst
 
 # Selected Publications
 
+A full list of my publications is available on [Google Scholar](https://scholar.google.com/citations?user=mq-Vzk8AAAAJ&hl=en).
+
 **FLIP2: Expanding Protein Fitness Landscape Benchmarks for Real-World Machine Learning Applications.** Kieran Didi, Sarah Alamdari, Alex X Lu, Bruce Wittmann, Kadina E Johnston, Ava P Amini, Ali Madani, Maya Czeneszew, Christian Dallago, Kevin K Yang. Oral (top 168 / 23,918 submissions) at International Conference on Machine Learning 2026. [[10.64898/2026.02.23.707496](https://doi.org/10.64898/2026.02.23.707496)].
 
 **Protein Generation with Evolutionary Diffusion: Sequence Is All You Need.** Sarah Alamdari, Nitya Thakkar, Rianne van den Berg, Alex X Lu, Nicolo Fusi, Ava P Amini, Kevin K Yang. *eLife*, 2026. [[10.7554/eLife.112029.1](https://doi.org/10.7554/eLife.112029.1)].

@@ -28,6 +28,8 @@ theme: minima
 plugins:
   - jekyll-feed
 
+google_scholar: https://scholar.google.com/citations?user=mq-Vzk8AAAAJ&hl=en
+
 header_pages:
   - research.md
   - talks.md
