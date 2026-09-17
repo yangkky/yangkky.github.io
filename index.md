@@ -5,7 +5,7 @@
 layout: home
 ---
 
-
+<img src="{{ '/assets/profile-centered-min.jpeg' | relative_url }}" alt="Kevin Kaichuang Yang" style="float: right; width: 220px; max-width: 40%; margin: 0 0 1em 1.5em; border-radius: 4px;">
 
 I am currently a principal researcher in BioML at [Microsoft Research New England](https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/), where I develop deep learning methods to design and understand proteins. Previously, I was a machine learning scientist at Generate Biomedicines, where I used machine learning to optimize proteins. From 2014-2018, I was a PhD student in Chemical Engineering at Caltech. I worked in Frances Arnold's lab, where I helped pioneer the use of machine learning for protein engineering.
 
