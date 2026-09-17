@@ -27,6 +27,10 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+header_pages:
+  - research.md
+  - talks.md
 #![logo]({{ site.baseurl }}/assets/seal.jpg)
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
